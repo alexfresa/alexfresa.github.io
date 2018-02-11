@@ -1,0 +1,79 @@
+ .clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.home {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+ 
+.home li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.home a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.home li:hover > a, .home .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+/*----- Top Level -----*/
+.home > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.home > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.home > ul > li:hover > a, .home > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.home li:hover .dropdown-content {
+    z-index:1;
+    opacity:1;
+}
+ 
+.dropdown-content {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.dropdown-content li {
+    display:block;
+    font-size:16px;
+}
+ 
+.dropdown-content li a {
+    padding:10px 30px;
+    display:block;
+    text-decoration:none;
+}
+ 
+.dropdown-content li a:hover, .dropdown-content .current-item a {
+    background:#3e3436;
+}
