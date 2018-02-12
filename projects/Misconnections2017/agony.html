@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>agony</title>
+    <link rel="stylesheet" href="scene.css">
+    <link rel="icon" href="scene/eyes.ico">
+    <script src="main.js"></script>
+    <audio autoplay loop>
+      <source src="scene/BMTL.mp3">
+</audio>
+</head>
+    <video playsinline autoplay muted loop id="bgvid">
+    <source src="scene/mv.webm" type="video/webm">
+    <source src="scene/mv.mp4" type="video/mp4">
+</video>
+    <body>
+        <div class = "container">
+        <div id="bring" style="display:none">
+            <a href="bedlam.html"><p style="text-align:center; font-size:90px;">B R I N G              </p></a>
+        </div>
+        <div id="me" style="display:none">
+            <a href="destruction.html"><p style="text-align:center; font-size:90px;">M E              </p></a>
+        </div>
+        <div id="to" style="display:none">
+            <a href="trepidation.html"><p style="text-align:center; font-size:90px;">T O              </p></a>
+        </div>
+        <div id="life" style="display:none">
+            <a href="attachment.html"><p style="text-align:center; font-size:90px;">L I F E              </p></a>
+        </div>
+        </div>
+        <script type="text/javascript">
+            function showBring() { 
+                document.getElementById("bring").style.display = "inline"; 
+            }
+                setTimeout("showBring()", 3000);
+            function showMe() { 
+                document.getElementById("me").style.display = "inline"; 
+            }
+                setTimeout("showMe()", 3000);
+            function showTo() { 
+                document.getElementById("to").style.display = "inline"; 
+            }
+                setTimeout("showTo()", 3000);
+            function showLife() { 
+                document.getElementById("life").style.display = "inline"; 
+            }
+                setTimeout("showLife()", 3000);
+        </script>
+</body>
+</html>

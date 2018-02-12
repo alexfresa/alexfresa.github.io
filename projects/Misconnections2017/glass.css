@@ -1,0 +1,293 @@
+@font-face {
+    font-family: Lavenda;
+    src: url('fonts/Lavenda Demo.otf');
+}
+
+h1 {
+    color: black;
+}
+
+.text {
+    z-index:1;
+    top: 260em;
+    height:120em;
+    width:100%;
+    position: absolute;
+    margin-left:auto;
+    margin-right: auto;
+    color: white;
+}
+
+p {
+    font-family: Lavenda;
+    color: white;
+    font-size:100px;
+    opacity:.3;
+    text-align: center;
+    
+    
+}
+
+
+
+.background {
+    background-color: white;
+    padding: 0;
+    margin:0;
+    
+}
+
+.background:after {
+    content:'';
+    position:relative;
+    left:0;
+    top:0;
+    background-image: url(glass/background.png);
+    width:100%;
+    height:100%;
+    z-index:-1;
+    padding: 0;
+    margin:0;
+    
+    
+}
+
+body {
+    z-index:0;
+    padding: 0;
+    margin:0;
+    cursor: url(glass/angel.cur), auto;
+}
+
+p {
+    color: black;
+}
+    
+
+.container {
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 0;
+    margin:0;
+    top:0;
+    left:0;
+    z-index:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+}
+
+img.background {
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 0;
+    margin:0;
+    top:0;
+    left:0;
+    z-index: -1;
+    overflow-x:hidden;
+    
+    overflow-y:hidden;
+    
+}
+
+img.clouds1 {
+    position: absolute;
+    top:95em;
+    left: 6em;
+    z-index:1;
+}
+
+img.clouds2 {
+    position: absolute;
+    top:150em;
+    left: 2em;
+    z-index:0;
+}
+
+img.clouds3 {
+    position: absolute;
+    top:200em;
+    right: 0;
+    z-index:2;
+}
+
+img.clouds4 {
+    position: absolute;
+    top:212em;
+    right: 6em;
+    z-index:0;
+}
+
+img.clouds5 {
+    position: absolute;
+    top:114em;
+    right: 0;
+    z-index:-1;
+}
+
+img.mariah1 {
+    position: absolute;
+    top: 79em;
+    left: 30em;
+    z-index:0;
+    opacity:.8;
+}
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+img.mariah2 {
+    position: absolute;
+    top: 208em;
+    left: 40em;
+    z-index:0;
+    opacity:.8;
+}
+
+
+
+img.mariah9 {
+    position: absolute;
+    top: 243em;
+    width:100%;
+    height:2701px;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    z-index:0;
+    opacity:.3;
+}
+
+img.god {
+    position: absolute;
+    top: 0em;
+    right:0em;
+    width: 60%;
+    opacity:.9;
+    
+}
+
+img.glass1 {
+    position: absolute;
+    top:173em;
+    right:-2em;
+    width: 70%;
+    height: 15%;
+    opacity: 0.9;
+    z-index:-1;
+    
+}
+
+img.glass2 {
+    position: absolute;
+    top:120em;
+    left:5em;
+    height:200px;
+}
+
+img.glass3 {
+    position: absolute;
+    top:35em;
+    left:5em;
+}
+
+img.glass4 {
+    position: absolute;
+    top:60em;
+    left:35em;
+}
+
+img.casket {
+    top: 222em;
+    position: absolute;
+    left:4em;
+    right:0;
+    z-index:2;
+    
+    
+}
+
+img.casket2 {
+    width: 726px;
+    height:346.5px;
+    position:absolute;
+    top: 385em;
+    left:13em;
+    right:0;
+}
+
+img.someday {
+    width:100.4%;
+    height:2300px;
+    position: absolute;
+    top:90em;
+    left: 0em;
+    opacity: 0.2;
+    z-index:-1;
+}

@@ -1,0 +1,39 @@
+@-webkit-keyframes colorPulse {
+    0% {background-color: black;}
+    100% {background-color: darkred;}
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    -webkit-animation: colorPulse 5s infinite alternate;
+    cursor: url(blood/wound.png), auto;
+}
+
+#club {
+    position: absolute;
+    z-index:1;
+    width:10%;
+    height:15%;
+    left:30%;
+    top:42%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+#mary {
+    position: absolute;
+    z-index:1;
+    width:10%;
+    height:15%;
+    left:75%;
+    top:84%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
