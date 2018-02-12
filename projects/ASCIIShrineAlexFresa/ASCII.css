@@ -1,0 +1,204 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black}
+
+#content {
+    overflow: auto;
+    height: 100%;}
+
+/* 
+    .strobe1 {
+        z-index:-1;
+        float:right;
+        margin-right:380px;
+        margin-top:2280px;
+        width:100px;
+        height:100px;
+    } 
+*/
+
+.strobe2 {
+    width:300px;
+    height:300px;
+}
+
+.banner {
+    width:800px;
+    height:400px;
+    }
+
+.anime {
+    width:750px;
+    height:1000px;
+    z-index:0;
+}
+
+.pants {
+    
+    color:white;
+    height:400px;
+    width: 200px;
+    float: left;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: -0px;
+    font-size: 3.4px;}
+
+.pants3 {
+    color:#d2fdce;
+    width: 200px;
+    float: left;
+    margin-left:-250px;
+    margin-right: 0px;
+    margin-top: 150px;
+    font-size: 3.4px;}
+
+.pants5 {
+    color:#a4fb9d;
+    width: 200px;
+    float: left;
+    margin-left:-250px;
+    margin-right: 0px;
+    margin-top: 350px;
+    font-size: 3.4px;}
+
+.pants7 {
+    color:#77fa6b;
+    width: 200px;
+    float: left;
+    margin-left:-250px;
+    margin-right: 0px;
+    margin-top: 550px;
+    font-size: 3.4px;}
+
+.pants9 {
+    color:#4af83a;
+    width: 200px;
+    float: left;
+    margin-left:-250px;
+    margin-right: 0px;
+    margin-top: 750px;
+    font-size: 3.4px;}
+
+.pants2 {
+    color:#4af83a;
+    width: 200px;
+    float: right;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    font-size: 3.4px;}
+
+.pants4 {
+    color:#77fa6b;
+    width: 200px;
+    float: right;
+    margin-left:0px;
+    margin-right: -250px;
+    margin-top: 150px;
+    font-size: 3.4px;}
+
+.pants6 {
+    color:#a4fb9d;
+    width: 200px;
+    float: right;
+    margin-left:0px;
+    margin-right: -250px;
+    margin-top: 350px;
+    font-size: 3.4px;}
+
+.pants8 {
+    color:#d2fdce;
+    width: 200px;
+    float: right;
+    margin-left:0px;
+    margin-right: -250px;
+    margin-top: 550px;
+    font-size: 3.4px;}
+
+
+.pants10 {
+    color:white;
+    width: 200px;
+    float: right;
+    margin-left:0px;
+    margin-right: -250px;
+    margin-top: 750px;
+    font-size: 3.4px;}
+
+.paci1 {
+    background-color:black;
+    color:white;
+    width:243px;
+    height:194px;
+    float:left;
+    margin:5px;
+    margin-top:250px;
+    margin-left:40px;
+    font-size:4px;
+}
+
+.paci2 {
+    background-color:black;
+    color:white;
+    width:243px;
+    height:194px;
+    float:left;
+    margin:5px;
+    margin-top:60px;
+    margin-left:-15px;
+    font-size:4px;
+}
+
+.paci3 {
+    background-color:black;
+    color:white;
+    width:243px;
+    height:194px;
+    float:left;
+    margin:5px;
+    margin-top:250px;
+    margin-left:-15px;
+    font-size:4px;
+}
+
+.paci4 {
+    background-color:black;
+    color:white;
+    width:243px;
+    height:194px;
+    float:left;
+    margin:5px;
+    margin-top:60px;
+    margin-left:-15px;
+    font-size:4px;
+}
+
+.paci5 {
+    background-color:black;
+    color:white;
+    width:243px;
+    height:194px;
+    float:right;
+    margin:5px;
+    margin-top:250px;
+    margin-right:40px;
+    margin-left:-20px;
+    font-size:4px;
+}
+
+div{
+    width:auto;
+    height:400px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+iframe{
+    margin-top: 20px;
+    margin-right:auto;
+    margin-left:auto;
+}
