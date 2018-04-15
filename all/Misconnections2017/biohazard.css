@@ -1,0 +1,87 @@
+@-webkit-keyframes colorPulse {
+    0% {background-color: black;}
+    100% {background-color: yellow;}
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    -webkit-animation: colorPulse 1s infinite alternate;
+    cursor: url(biohazard/exclaim.cur), auto;
+}
+
+.container {
+    position:relative;
+    z-index:0;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    top:0px;
+    left:0px;
+}
+
+.biohazard {
+    position: absolute;
+    z-index:1;
+    width:15em;
+    top:8%;
+    left:40%;
+    padding:0;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.vest {
+    position: absolute;
+    z-index:1;
+    width:12em;
+    top:55%;
+    left:78%;
+    padding:0;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mask {
+    position: absolute;
+    z-index:1;
+    width:12em;
+    top:59%;
+    left:55%;
+    padding:0;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.whip {
+    position: absolute;
+    z-index:1;
+    width:12em;
+    top:55%;
+    left:31%;
+    padding:0;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.helmet {
+    position: absolute;
+    z-index:1;
+    width:12em;
+    top:55%;
+    left:8%;
+    padding:0;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}

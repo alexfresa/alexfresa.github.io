@@ -1,0 +1,215 @@
+html, body {
+    height:100%;
+}
+
+@font-face {
+    font-family: Lavenda;
+    src: url('fonts/Lavenda Demo.otf');
+}
+
+h1 {
+    color: black;
+}
+
+body {
+    background:white;
+    z-index:0;
+    padding: 0;
+    margin:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    cursor: url(explosion/bomb.cur), auto;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    top:0;
+    left:0;
+    z-index:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+img.exp11 {
+    width: 60em;
+    position: absolute; 
+    bottom: -3em;
+    left:13em;
+    z-index:1;
+    pointer-events:none
+    
+}
+
+img.exp1 {
+    width: 45em; 
+    position: absolute;
+    left:-5em;
+    bottom:-8em;
+    z-index:0;
+    pointer-events:none
+    
+}
+
+img.exp2 {
+    width: 40em; 
+    position: absolute;
+    top:-9em;
+    left:40em;
+    z-index:2;
+    pointer-events:none
+}
+
+img.exp3 {
+    width: 35em; 
+    position: absolute;
+    top: 0em;
+    left:10em;
+    z-index:3;
+    opacity: 0.6;
+    pointer-events:none
+}
+
+img.exp4 {
+    width: 76em; 
+    z-index: 1;
+    position: absolute;
+    bottom: 13em;
+    left:2em;
+    pointer-events:none
+    
+}
+
+img.exp5 {
+    width:30em; 
+    z-index: -2;
+    position: fixed;
+    bottom: 8em;
+    right:-10em;
+    pointer-events:none
+    
+}
+
+img.exp6 {
+    width: 50em; 
+    position: absolute;
+    top: -11em;
+    left:12em;
+    z-index:1;
+    pointer-events:none
+    
+}
+
+img.exp7 {
+    width: 40em; 
+    position: absolute;
+    bottom: 0em;
+    left:30em;
+    z-index: 1;
+    opacity: .7;
+    pointer-events:none
+}
+
+img.exp8 {
+    width: 18em; 
+    position:absolute;
+    top: 9em;
+    left:-5em;
+    z-index:2;
+    opacity:1;
+    pointer-events:none
+}
+
+img.exp9 {
+    width: 50em;
+    position: absolute;
+    top: 0em;
+    right:-7em;
+    z-index: 2;
+    pointer-events:none
+}
+
+img.exp10 {
+    width: 37em;
+    position: absolute;
+    bottom: -10em;
+    right:-10em;
+    z-index:2;
+    pointer-events:none
+}
+
+img.exp12 {
+    width: 20em;
+    position: absolute;
+    top: -8em;
+    left:12em;
+    z-index:0;
+    pointer-events:none
+}
+
+img.exp13 {
+    width: 40em; 
+    position: fixed;
+    top: -5em;
+    left:-1em;
+    z-index:0;
+    pointer-events:none
+}
+
+img.exp14 {
+    width: 50em; 
+    position: fixed;
+    top: -5em;
+    left:-15em;
+    z-index:-1;
+    pointer-events:none
+}
+
+
+
+img.limb2 {
+    width: 15em; 
+    position: absolute;
+    top: 15em;
+    right:-5em;
+    z-index:2;
+}
+
+img.limb3 {
+    width: 14em; 
+    position: absolute;
+    top: 0em;
+    left:29em;
+    z-index:1;
+}
+
+img.limb4 {
+    width: 15em; 
+    position: absolute;
+    top: 20em;
+    left:0em;
+    z-index:0;
+}
+
+img.limb1 {
+    width: 16em; 
+    position: absolute;
+    top: 0em;
+    left:10em;
+    z-index:0;
+}
+
+img.limb5 {
+    width: 15em; 
+    position: absolute;
+    top: 18em;
+    left:25em;
+    z-index:0;
+}
