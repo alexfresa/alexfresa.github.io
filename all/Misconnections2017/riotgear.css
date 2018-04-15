@@ -1,0 +1,154 @@
+@font-face {
+    font-family: DrukWide;
+    src: url('fonts/DrukWide-Heavy.ttf');
+}
+
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
+
+html, body {
+    height:100%;
+    
+}
+
+body {
+    z-index:0;
+    padding: 0;
+    margin:0;
+    cursor: url(riotgear/police.cur), auto;
+}
+
+
+.phone {
+    position: absolute;
+    width:109%;
+    left:-45px;
+    height:103%;
+    top:-10px;
+    margin:0;
+    padding:0;
+}
+
+#club {
+    position: absolute;
+    z-index:2;
+    width:5%;
+    height:10%;
+    left:89%;
+    top:70%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+#girlfriends {
+    position: absolute;
+    z-index:2;
+    width:9%;
+    height:15%;
+    left:75%;
+    top:73%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+#fashion {
+    position: absolute;
+    z-index:2;
+    width:9%;
+    height:15%;
+    left:76%;
+    top:11%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+#pill {
+    position: absolute;
+    z-index:2;
+    width:12%;
+    height:22%;
+    left:74%;
+    top:39%;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+p {
+    font-family: DrukWide;
+    color: white;
+    opacity:.3;
+    animation: fadein 600s;
+    -moz-animation: fadein 600s; /* Firefox */
+    -webkit-animation: fadein 600s; /* Safari and Chrome */
+    -o-animation: fadein 600s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+
+a:link {
+    text-decoration: none;
+    color:white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
