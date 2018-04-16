@@ -119,6 +119,7 @@ html, body {
     text-decoration: none;
     color:black;
     z-index:1;
+    overflow: visible;
     
 }
 
