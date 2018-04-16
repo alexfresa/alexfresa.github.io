@@ -74,6 +74,7 @@ body  {
     text-align: center;
     top:50%;
     transform: translateY(-50%);
+    overflow: visible;
 }
 
 .rose {
