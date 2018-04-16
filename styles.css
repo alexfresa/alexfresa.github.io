@@ -72,7 +72,7 @@ html, body {
     padding-top: .5em;
     background-color: transparent;
     text-align: center;
-    top:45%;
+    top:42%;
     transform: translateY(-50%);
     overflow: visible;
     width:100%;
@@ -87,7 +87,7 @@ html, body {
     margin-bottom:auto;
     padding:0em;
     display: block;
-    top:42%;
+    top:38%;
     transform: translateY(-50%);
 }
 
@@ -124,7 +124,6 @@ html, body {
     padding-right: .2em;
     padding-bottom: 0em;
     padding-top:.5em;
-    
 }
 
 .home a:hover {
