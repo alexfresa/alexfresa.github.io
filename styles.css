@@ -120,8 +120,8 @@ html, body {
     color:black;
     z-index:1;
     overflow: visible;
-    padding-left: .3em;
-    padding-right: .3em;
+    padding-left: .4em;
+    padding-right: .4em;
     padding-bottom: 0em;
     padding-top:.5em;
 }
