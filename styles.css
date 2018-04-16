@@ -66,12 +66,16 @@ html, body {
     margin-right:auto;
     margin-top:auto; 
     margin-bottom:auto;
-    padding:0em;
+    padding-left:0em;
+    padding-right: 0em;
+    padding-bottom: 0em;
+    padding-top: .5em;
     background-color: transparent;
     text-align: center;
-    top:50%;
+    top:45%;
     transform: translateY(-50%);
     overflow: visible;
+    width:100%;
 }
 
 .rose {
@@ -83,7 +87,7 @@ html, body {
     margin-bottom:auto;
     padding:0em;
     display: block;
-    top:50%;
+    top:45%;
     transform: translateY(-50%);
 }
 
