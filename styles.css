@@ -163,6 +163,8 @@ html, body {
     animation-duration:3.5s;
     animation-timing-function:linear;
     animation-iteration-count:infinite;
+    
+    overflow: visible;
 }
 
 @-moz-keyframes blinker {  
