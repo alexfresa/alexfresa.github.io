@@ -120,13 +120,13 @@ html, body {
     color:black;
     z-index:1;
     overflow: visible;
-    word-wrap:normal;
     
 }
 
 .home a:hover {
     -webkit-filter: blur(0px);
     -webkit-animation: fadein linear .3s;
+    overflow: visible;
     
 }
 
