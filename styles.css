@@ -120,6 +120,7 @@ html, body {
     color:black;
     z-index:1;
     overflow: visible;
+    word-wrap:normal;
     
 }
 
