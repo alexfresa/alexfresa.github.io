@@ -606,10 +606,11 @@ h1 a {
 }
 
 
-/* RESPONSIVE SECTION */
+/* RESPONSIVE SECTION --------------------- */
 
+/* MOBILE VERSION */
 
-@media (max-width:600px){
+@media (max-width:540px){
     .gallery1{
         width:78%;
         margin-left: 1em;
@@ -656,5 +657,52 @@ h1 a {
     }
 }
 
+/* MEDIUM VERSION */
 
+@media (min-width:541px) and (max-width:770px){
+    .gallery1{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery2{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery3{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery4{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery5{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery6{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery7{
+        width:40%;
+        margin-left: 1em;
+    }
+    
+    .gallery8{
+        width:40%;
+        margin-left: 0.5em;
+    }
+    
+    .gallery9{
+        width:40%;
+        margin-left: 1em;
+    }
+}
 
