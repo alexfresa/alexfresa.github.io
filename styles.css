@@ -46,15 +46,6 @@ html, body {
     padding:0;
 }
 
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
-
-@ms-viewport{
-    width: extend-to-zoom;
-    zoom: 1.0;
-}
 
 #enterheader {
     font-family:Sverige, arial, futura;

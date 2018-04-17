@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
     font-family: DrukWide;
     src: url(fonts/DrukWide-Super.ttf);
@@ -29,6 +31,20 @@
 }
 
 
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+html, body {
+    top:0;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding:0;
+}
+
 #pagetitle {
     font-family:Sverige, arial, futura;
     position:absolute;
@@ -46,29 +62,6 @@
     
 }
 
-html, body {
-    top:0;
-    width: 100%;
-    height:100%;
-    margin: 0;
-    padding:0;
-}
-
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
-
-@ms-viewport{
-    width: extend-to-zoom;
-    zoom: 1.0;
-}
-
- .clearfix:after {
-    display:block;
-    clear:both;
-}
-
 .home {
     top:0;
     margin: 0;
@@ -77,8 +70,16 @@ html, body {
     height:100%;
     width: 100%;
     background-color: #ffffff;
-    
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index:0;
 }
+    
 
 .home li {
     padding:0;
