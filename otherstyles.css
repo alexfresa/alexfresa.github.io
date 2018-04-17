@@ -472,7 +472,7 @@ h1 a {
     display:inline-block;
 }
 
-.gallery8 {
+.gallery9 {
     position:relative;
     z-index:0;
     width:27%;
@@ -607,27 +607,27 @@ h1 a {
 
 @media (max-width:600px){
     .gallery1{
-        width:100%;
+        width:78%;
     }
     
     .gallery2{
-        width:100%;
+        width:78%;
     }
     
     .gallery3{
-        width:100%;
+        width:78%;
     }
     
     .gallery4{
-        width:100%;
+        width:78%;
     }
     
     .gallery5{
-        width:100%;
+        width:78%;
     }
     
     .gallery6{
-        width:100%;
+        width:78%;
     }
 }
 
