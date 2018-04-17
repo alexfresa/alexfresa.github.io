@@ -605,4 +605,31 @@ h1 a {
     100% { opacity: 1.0; }
 }
 
+@media (max-width:600px){
+    .gallery1{
+        width:100%;
+    }
+    
+    .gallery2{
+        width:100%;
+    }
+    
+    .gallery3{
+        width:100%;
+    }
+    
+    .gallery4{
+        width:100%;
+    }
+    
+    .gallery5{
+        width:100%;
+    }
+    
+    .gallery6{
+        width:100%;
+    }
+}
+
+
 

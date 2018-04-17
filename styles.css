@@ -188,8 +188,3 @@ html, body {
     100% { opacity: 1.0; }
 }
 
-@media (max-width:600px){
-    .column{
-        width:100%;
-    }
-}
