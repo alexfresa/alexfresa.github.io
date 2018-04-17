@@ -1,7 +1,9 @@
- .clearfix:after {
+.clearfix:after {
     display:block;
     clear:both;
 }
+
+/* FONTS */
 
 @font-face {
     font-family: DrukWide;
