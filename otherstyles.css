@@ -605,29 +605,54 @@ h1 a {
     100% { opacity: 1.0; }
 }
 
+
+/* RESPONSIVE SECTION */
+
+
 @media (max-width:600px){
     .gallery1{
         width:78%;
+        margin-left: 1em;
     }
     
     .gallery2{
         width:78%;
+        margin-left: 1em;
     }
     
     .gallery3{
         width:78%;
+        margin-left: 1em;
     }
     
     .gallery4{
         width:78%;
+        margin-left: 1em;
     }
     
     .gallery5{
         width:78%;
+        margin-left: 1em;
     }
     
     .gallery6{
         width:78%;
+        margin-left: 1em;
+    }
+    
+    .gallery7{
+        width:78%;
+        margin-left: 1em;
+    }
+    
+    .gallery8{
+        width:78%;
+        margin-left: 0.5em;
+    }
+    
+    .gallery9{
+        width:78%;
+        margin-left: 1em;
     }
 }
 
