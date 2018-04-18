@@ -53,7 +53,7 @@ html, body {
     font-family:Sverige, arial, futura;
     position:relative;
     z-index:1;
-    color: red;
+    color: black;
     font-size:3.7em;
     margin-left: auto;
     margin-right:auto;
@@ -108,7 +108,7 @@ html, body {
     transition:all linear 0.15s;
     -webkit-text-stroke: 1px black;
     text-decoration: none;
-    color:red;
+    color:black;
     z-index:1;
     overflow: visible;
     padding-left: .3em;
