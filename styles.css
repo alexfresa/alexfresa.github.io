@@ -181,3 +181,19 @@ html, body {
     100% { opacity: 1.0; }
 }
 
+/* RESPONSIVE SECTION --------------------- */
+
+/* MOBILE VERSION */
+
+@media (max-width:540px){
+    
+}
+
+/* MEDIUM VERSION */
+
+@media (min-width:541px) and (max-width:770px){
+    
+}
+
+
+
