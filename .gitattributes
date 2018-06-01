@@ -77,7 +77,7 @@ AUTHORS text
 *.jpeg binary
 *.gif binary
 *.ico binary
-*.mov binary
+*.mov filter=lfs diff=lfs merge=lfs -text
 *.mp4 binary
 *.mp3 binary
 *.flv binary
