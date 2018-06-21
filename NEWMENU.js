@@ -8,3 +8,4 @@ function toggleNavPanel(x){
         navarrow.innerHTML = "&#9652;";
     }
 }
+

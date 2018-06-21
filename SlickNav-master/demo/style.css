@@ -93,7 +93,7 @@ div#sidebar > #logo{
 
 
 div#sidebar > #logo > button{
-    background-image: url(images/rosebanner.png);
+    background-image: url(/images/rosebanner.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
