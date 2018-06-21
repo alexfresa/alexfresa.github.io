@@ -7,7 +7,7 @@
     var
     // default settings object.
         defaults = {
-            label: 'MENU',
+            label: 'Alex Fresa',
             duplicate: true,
             duration: 200,
             easingOpen: 'swing',
@@ -126,8 +126,6 @@
             ['<' + settings.parentTag + ' aria-haspopup="true" role="button" tabindex="0" class="' + prefix + '_btn ' + prefix + '_collapsed">',
                 '<span class="' + prefix + '_menutxt">' + settings.label + '</span>',
                 '<span class="' + iconClass + '">',
-                    '<span class="' + prefix + '_icon-bar"></span>',
-                    '<span class="' + prefix + '_icon-bar"></span>',
                     '<span class="' + prefix + '_icon-bar"></span>',
                 '</span>',
             '</' + settings.parentTag + '>'
