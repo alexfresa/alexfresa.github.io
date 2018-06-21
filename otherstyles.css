@@ -90,6 +90,7 @@ body {
     margin:0;
     list-style-type: none;
     font-family: arial, futura;
+     
 }
 
 .home a {
@@ -111,6 +112,7 @@ body {
     display:inline-block;
     position:relative;
     font-size:.8em;
+    
 }
 
 .home > ul > li > a {
@@ -609,9 +611,7 @@ h1 a {
     100% { opacity: 1.0; }
 }
 
-.menu-on, .menu-off {
-    display:none;
-}
+
 
 
 /* RESPONSIVE SECTION --------------------- */
@@ -708,7 +708,7 @@ h1 a {
     #pagetitle {
         display:block;
         position: relative;
-        width: 30%;
+        width: 100%;
         font-family:Sverige, arial, futura;
     z-index:1002;
     color: transparent;
@@ -716,7 +716,8 @@ h1 a {
     line-height:1em;
     top:0em;
         left:0em;
-    padding:1em;
+    padding-top:1em;
+        padding-bottom: 1em;
     background-color: transparent;
     -webkit-text-stroke: 1px black;
     text-align:center;
@@ -725,56 +726,46 @@ h1 a {
     }
     
     #rosebanner {
-        width:100%;
+        width:30%;
+        display: block;
+        position: relative;
+        margin-right:auto;
+        margin-left:auto;
     }
     
-    .menu-on {
-        display:block;
-        position: absolute;
-        width: 100%;
-        font-family:Sverige, arial, futura;
-    z-index:1001;
-    color: transparent;
-    font-size:1em;
-    line-height:1em;
-    top:0em;
-    background-color: transparent;
-    -webkit-text-stroke: 1px black;
-    text-align:center;
-        margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-        padding-top: 1em;
-    }
     
-    .menu-off {
-        position:fixed;
-        left:0;
-        top:0;
-        right:0;
-        left:0;
-        bottom:0;
-        widtH:100px;
-        height:100px;
-        background-color:rgba(0,0,0,0.6);
-        z-index:1000;
-        display:none;
-    }
+    .home li {
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    font-family: arial, futura;
+    background-color:white;
+}
     
-    #toggle-menu {
-        display:none;
-    }
+    #dropdown-content li {
+    display:block;
+    font-size:1.5em;
+}
     
-    #toggle-menu:checked ~ #pagetitle {
-        display:block;
-        
-    }
+    #dropdown-content {
+    width:100%;
+    padding:0;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:transparent;
+    text-align: center;
+    -webkit-filter:blur(0px);
+    -webkit-transition: all .3s ease-in;
+    line-height: 3em;
+    overflow:hidden;
+    -moz-transition:all 0.6s ease-in-out 0s;
+    -webkit-transition:all 0.6s ease-in-out 0s;
     
-    #toggle-menu:checked ~ .menu-off {
-        display:block;
-    }
-    
+}
     
 }
 
