@@ -190,12 +190,12 @@ div#sidebar > #sections_panel > div{
     }
     
     div#sidebar > #logo{
-    height:4.5em;
-    background-color: transparent;
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+        height:4.5em;
+        background-color: transparent;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     .artwork2{
         width:80%;

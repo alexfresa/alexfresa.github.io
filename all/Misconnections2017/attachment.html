@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="feeling.css">
     <link rel="icon" href="feeling/heart.ico">
     <script src="main.js"></script>
+    <script src="/norightclick.js"></script>
     <audio autoplay loop>
       <source src="feeling/i%20never%20told%20you.mp3">
 </audio>
@@ -29,20 +30,5 @@
             <a href="destruction.html"><img src="feeling/heart1.png" class="heart1"></a>
             <a href="introspection.html"><img src="feeling/heart2.png" class="heart2"></a>
         </div>
-    
-     
-        
-      <script type="text/JavaScript">
-            //Script courtesy of BoogieJack.com
-            var message="NoRightClicking";
-            function defeatIE() {if (document.all) {(message);return false;}}
-            function defeatNS(e) {if 
-                (document.layers||(document.getElementById&&!document.all)) {
-                    if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) 
-            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
-            else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
-            document.oncontextmenu=new Function("return false")
-        </script>  
 </body>
 </html>

@@ -1,31 +1,36 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width initial-scale=1">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
         <link rel="stylesheet" href="/otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
-        <script src="main.js"></script>
+        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
+        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
+        <script src="/NEWMENU.js"></script>
+        <script src="/norightclick.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
 
     <body>   
-        <div class="home">
-        <ul class="clearfix">
-                <li id="pagetitle"><a href="index.html">Alex Fresa</a>
-                    <img src="/images/rosebanner.png" id="rosebanner">
+        <div id="sidebar">
+            <div id="pagetitle"><a href="index.html">Alex Fresa</a></div>
+            <div id="logo">
+                <button onclick="toggleNavPanel('sections_panel')"></button>
+            </div>
+            <div id="sections_panel">
+                <div>
                     <ul id="dropdown-content">
                         <li><a href="/all.html">PORTFOLIO</a></li>
                         <li><a href="/research.html">RESEARCH</a></li>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
         
-        <div class="galleryContainer" style="margin-left:22%">
+        <div class="galleryContainer">
             <div class="gallery1">
                     <a href="/all/sound/debtstalker.html">
                     <img src="/all/sound/DebtStalker/habitual.png" class="galleryimage">
@@ -58,24 +63,16 @@
                     </a>
                 </div>
         </div>
-        </div>
-    </br>
     </br>
 </br>
-</br> 
 </br>
-</br> 
-<script type="text/JavaScript">
-            //Script courtesy of BoogieJack.com
-            var message="NoRightClicking";
-            function defeatIE() {if (document.all) {(message);return false;}}
-            function defeatNS(e) {if 
-                (document.layers||(document.getElementById&&!document.all)) {
-                    if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) 
-            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
-            else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
-            document.oncontextmenu=new Function("return false")
-        </script>
+</br>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+	           $('#dropdown-content').slicknav();
+            });
+    </script> 
 </body>
 </html>

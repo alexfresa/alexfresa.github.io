@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> GIF Collage</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <link rel="stylesheet" href="GIF.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta charset="utf-8">
+        <title>Alex Fresa</title>
+        <link rel="stylesheet" href="/otherstyles.css">
+        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
+        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
+        <script src="/NEWMENU.js"></script>
+        <script src="/norightclick.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
     <body>
     
@@ -15,17 +19,6 @@
         <div class="couple"></div>
         <div class="cross"></div>
         <div class="othermakeup"></div>
-        <script type="text/JavaScript">
-            //Script courtesy of BoogieJack.com
-            var message="NoRightClicking";
-            function defeatIE() {if (document.all) {(message);return false;}}
-            function defeatNS(e) {if 
-                (document.layers||(document.getElementById&&!document.all)) {
-                    if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) 
-            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
-            else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
-            document.oncontextmenu=new Function("return false")
-        </script>
+        
     </body>
 </html>

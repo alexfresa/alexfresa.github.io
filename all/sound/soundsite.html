@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="soundsite.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="soundsite.js"></script>
-</head>
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta charset="utf-8">
+        <title>Alex Fresa</title>
+        <link rel="stylesheet" href="/otherstyles.css">
+        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
+        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
+        <script src="/NEWMENU.js"></script>
+        <script src="/norightclick.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    </head>
 <body>
     
 <ul class="menu"   
@@ -67,18 +70,7 @@
     
 <div class="greyRight10" onmouseover="playAudio19()" onmouseleave="pauseAudio19()">
 <audio id="audio_element19" src="soundfiles/lil%20jon%20ok.mp3"></audio></div>
-<script type="text/JavaScript">
-            //Script courtesy of BoogieJack.com
-            var message="NoRightClicking";
-            function defeatIE() {if (document.all) {(message);return false;}}
-            function defeatNS(e) {if 
-                (document.layers||(document.getElementById&&!document.all)) {
-                    if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) 
-            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
-            else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
-            document.oncontextmenu=new Function("return false")
-        </script>
+
 </body>
 
 

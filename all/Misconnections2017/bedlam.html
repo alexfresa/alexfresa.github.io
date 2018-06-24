@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="anime.css">
     <link rel="icon" href="anime/onigiri.ico">
     <script src="main.js"></script>
+    <script src="/norightclick.js"></script>
     <audio autoplay loop>
       <source src="anime/Resident%20Evil.mp3">
 </audio>
@@ -67,20 +68,5 @@
             
             
         </div>
-    
-     
-        
-        <script type="text/JavaScript">
-            //Script courtesy of BoogieJack.com
-            var message="NoRightClicking";
-            function defeatIE() {if (document.all) {(message);return false;}}
-            function defeatNS(e) {if 
-                (document.layers||(document.getElementById&&!document.all)) {
-                    if (e.which==2||e.which==3) {(message);return false;}}}
-            if (document.layers) 
-            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;}
-            else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;}
-            document.oncontextmenu=new Function("return false")
-        </script>
 </body>
 </html>
