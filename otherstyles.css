@@ -367,6 +367,26 @@ div#sidebar > #sections_panel > div{
     margin-top:0em;
     margin-left:.5em;
     margin-bottom:3em;
+    width: 38%;
+}
+
+.artwork4 {
+    position: relative;
+    z-index:1;
+    top:3em;
+    left:0em;
+    margin-top:0em;
+    margin-left:1em;
+    margin-bottom:3em;
+    widtH:38%;
+}
+
+.artworkWrap {
+    position: relative;
+    z-index:1;
+    left:0em;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .specsContainer {
@@ -517,7 +537,7 @@ div#sidebar > #sections_panel > div{
     }
     
     .player iframe {
-        width:480px;
+        width:400px;
         height:270px;
     }
     
@@ -570,6 +590,40 @@ div#sidebar > #sections_panel > div{
         margin-right:auto;
 }
     
+    .artwork3 {
+    position: relative;
+    z-index:1;
+    top:0em;
+    margin-top:0em;
+    text-align: center;
+    margin-bottom:2em;
+        margin-left:0em;
+    width:38%;
+        display:inline-block;
+}
+    
+    .artwork4 {
+    position: relative;
+    z-index:1;
+    top:0em;
+    margin-top:0em;
+    text-align: center;
+        margin-left:.7em;
+    margin-bottom:2em;
+    width:38%;
+        display:inline-block;
+}
+    
+    .artworkWrap {
+        position:relative;
+        z-index:1;
+        top:0em;
+        display:block;
+        margin-top:0em;
+        margin-left:auto;
+        margin-left:auto;
+        text-align: center;
+    }
     
     .player {
         position:relative;
@@ -581,6 +635,28 @@ div#sidebar > #sections_panel > div{
         margin-left:auto;
         text-align: center;
 }
+    
+    .player2 {
+    position:relative;
+    z-index:1;
+    top:1em;
+    left:0em;
+    margin-top:0em;
+    margin-left:10%;
+        width:90%;
+}
+    
+    .player iframe {
+    width:80%;
+    height:216px;
+    z-index:1;
+    position:relative;
+    top:0em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+        
+    }
     
     .specsContainer {
         margin-left:0;
@@ -603,6 +679,22 @@ div#sidebar > #sections_panel > div{
         padding-bottom:3em;
     }
     
+    .galleryTitle {
+    font-size: 1.6em;
+    top:20%;
+    left:0;
+    width:100%;
+    height:50%;
+}
+
+.galleryDate {
+    font-size: 1.3em;
+    bottom:0%;
+    left:0;
+    width:100%;
+    height:35%;
+}
+    
     .researchstatement {
     z-index:1;
     position:relative;
@@ -618,6 +710,37 @@ div#sidebar > #sections_panel > div{
     text-align: left;
     line-height: 1.1em;
     font-size:1em;
+}
+    
+.me {
+    position:relative;
+    z-index:1;
+    top:0em;
+    width:65%;
+    margin-top:1em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+        .scream {
+    position:relative;
+    z-index:0;
+    width:10%;
+    top:0em;
+    left:0em;
+    margin-left:10%;
+    display:block;
+}
+    
+    .statement {
+    z-index:1;
+    position:relative;
+    width:80%;
+    top:1em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
     
     h1 {
