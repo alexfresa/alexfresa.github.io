@@ -635,6 +635,7 @@ div#sidebar > #sections_panel > div{
     left:0em;
     margin-top:0em;
     margin-left:.5em;
+    width:85%;
 }
 
 .player2 {
@@ -644,7 +645,28 @@ div#sidebar > #sections_panel > div{
     left:0em;
     margin-top:0em;
     margin-left:.5em;
+    width: 85%;
 }
+
+.player3 {
+    position:relative;
+    z-index:1;
+    top:3em;
+    left:0em;
+    margin-top:0em;
+    margin-left:.5em;
+    width: 85%;
+}
+
+.player iframe {
+    WIDTH: 100%;
+}
+
+.player2 iframe {
+    width: 100%;
+}
+
+
 
 
 /* ------------------------RESPONSIVE SECTION---------------------------- */
@@ -675,11 +697,6 @@ div#sidebar > #sections_panel > div{
     
     .artwork2{
         width:80%;
-    }
-    
-    .player iframe {
-        width:400px;
-        height:270px;
     }
     
     #dropdown-content li {
@@ -793,36 +810,44 @@ div#sidebar > #sections_panel > div{
     }
     
     .player {
-        position:relative;
-        z-index:1;
-        top:0em;
-        display:block;
-        margin-top:0em;
-        margin-left:auto;
-        margin-left:auto;
-        text-align: center;
+    position:relative;
+    z-index:1;
+    top:1em;
+    margin-top:0em;
+    margin-left:auto;
+    margin-right:auto;
 }
     
     .player2 {
     position:relative;
     z-index:1;
     top:1em;
-    left:0em;
     margin-top:0em;
-    margin-left:10%;
-        width:90%;
-}
-    
-    .player iframe {
-    width:80%;
-    height:216px;
-    z-index:1;
-    position:relative;
-    top:0em;
-    display:block;
     margin-left:auto;
     margin-right:auto;
-        
+}
+    
+    .player3 {
+        position:relative;
+    z-index:1;
+    top:1em;
+    margin-top:0em;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    .player iframe {
+    display:block;
+    }
+    
+    .player2 iframe {
+    display:block;
+    }
+    
+    .player3 iframe {
+    display:block;
+        width:100%;
+        height:260px;
     }
     
     .specsContainer {
