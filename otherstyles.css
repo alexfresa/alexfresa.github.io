@@ -945,9 +945,9 @@ div#sidebar > #sections_panel > div{
     h1 {
     color: black !important;
     font-family: arial, futura;
-    text-align: center;
+    text-align: left;
     text-decoration:none;
-    font-style: italic;
+    font-style:italic;
 }
     
     div#sidebar > #pagetitle {
