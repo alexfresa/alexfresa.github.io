@@ -107,7 +107,7 @@ background:transparent;
 .slicknav_menu {
   box-sizing: border-box;
   background: #fff;
-  padding: 8px; 
+  padding-top: 15px; 
 }
   .slicknav_menu * {
     box-sizing: border-box; }

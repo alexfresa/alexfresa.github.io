@@ -704,7 +704,7 @@ div#sidebar > #sections_panel > div{
     }
     
     .bigGallery1{
-        width:70%;
+        width:85%;
         position:relative;
         z-index:0;
         display:block;
@@ -713,7 +713,7 @@ div#sidebar > #sections_panel > div{
     }
     
     .bigGallery2, .bigGallery3, .bigGallery4{
-        width:70%;
+        width:85%;
         z-index:0;
         display:block;
         margin-left:auto;
@@ -721,7 +721,7 @@ div#sidebar > #sections_panel > div{
     }
     
     .gallery1{
-        width:70%;
+        width:85%;
         position:relative;
         z-index:0;
         display:block;
@@ -730,7 +730,7 @@ div#sidebar > #sections_panel > div{
     }
     
     .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8, .gallery9{
-        width:70%;
+        width:85%;
         z-index:0;
         display:block;
         margin-left:auto;
@@ -739,7 +739,7 @@ div#sidebar > #sections_panel > div{
     
     .cycle-slideshow {
         top:1em;
-        width:80%;
+        width:85%;
         margin-top:1em;
         display:block;
         margin-left:auto;
@@ -750,7 +750,7 @@ div#sidebar > #sections_panel > div{
         position: relative;
         z-index:1;
         top:1em;
-        width:80%;
+        width:85%;
         margin-top:2em;
         display:block;
         margin-left:auto;
@@ -765,7 +765,7 @@ div#sidebar > #sections_panel > div{
     text-align: center;
     margin-bottom:2em;
         margin-left:0em;
-    width:38%;
+    width:41%;
         display:inline-block;
 }
     
@@ -777,7 +777,7 @@ div#sidebar > #sections_panel > div{
     text-align: center;
         margin-left:.7em;
     margin-bottom:2em;
-    width:38%;
+    width:41%;
         display:inline-block;
 }
     
@@ -788,7 +788,7 @@ div#sidebar > #sections_panel > div{
         display:block;
         margin-top:0em;
         margin-left:auto;
-        margin-left:auto;
+        margin-right:auto;
         text-align: center;
     }
     
@@ -897,7 +897,7 @@ div#sidebar > #sections_panel > div{
     .researchstatement {
     z-index:1;
     position:relative;
-    width:80%;
+    width:85%;
     top:0em;
     display:block;
     margin-left:auto;
@@ -927,15 +927,15 @@ div#sidebar > #sections_panel > div{
     z-index:0;
     width:10%;
     top:0em;
-    left:0em;
-    margin-left:10%;
+    left:2em;
+    margin-left:0;
     display:block;
 }
     
     .statement {
     z-index:1;
     position:relative;
-    width:80%;
+    width:85%;
     top:1em;
     display:block;
     margin-left:auto;
