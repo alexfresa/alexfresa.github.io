@@ -1,55 +1,109 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
-        <link rel="stylesheet" href="/otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
-        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
-        <script src="/NEWMENU.js"></script>
-        <script src="/norightclick.js"></script>
+        <link rel="stylesheet" href=/css/otherstyles.css>
+        <link rel="stylesheet" href="/simple-portfolio-page/css/normalize.css">
+        <link rel="hover styles" href="/css/hover-master/css/hover.css" media="all">  
+        <script src="/js/norightclick.js"></script>
+        <script src="/js/filterdropdown.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var filterList = {
+                    init: function () {
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixItUp({
+                            selectors: {
+                                target: '.portfolio',
+                                filter: '.filter'	
+                            },
+                            load: {
+                                filter: ".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound"  
+                            }     
+                        });								
+                    }
+                };
+                // Run the show!
+                filterList.init();
+            });	
+        </script>
     </head>
     
-    <body>
-        <div id="sidebar">
-            <div id="pagetitle"><a href="/index.html">Alex Fresa</a></div>
-            <div id="logo">
-                <button onclick="toggleNavPanel('sections_panel')"></button>
-            </div>
-            <div id="sections_panel">
-                <div>
-                    <ul id="dropdown-content">
-                        <li><a href="/all.html">PORTFOLIO</a></li>
-                        <li><a href="/research.html">RESEARCH</a></li>
+    <header>
+        <div class="sidebar">
+            <div id="ResponsiveTitle"><a class ="logo" href="/all.html"><img src="/images/name1.svg"></a></img></div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="dropdown-content">
+            <li>
+                <button class="dropdown-btn">COLLECTIONS</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="/all/video.html">VIDEO & PERFORMANCE</a></li>
+                        <li><a href="/all/art.html">ART & INSTALLATION</a></li>
+                        <li><a href="/all/design.html">WEB & DESIGN</a></li>
+                        <li><a href="/all/sound.html">SOUND</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button class="dropdown-btn">INFO</button>
+                <div class="panel">
+                    <ul>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
+            </li>
+            <li><a href="/research.html">RESEARCH</a></li>
+        </ul>
+        </div>
+    </header>
+    
+    <body>
+    <div id="canvas"> <!-- full body padding -->
+        <!-- DESKTOP FILTER MENU -->
+        <div class="projectmenuTitle">
+                <li>MoMA PS4</li>
         </div>
         
         <div class ="specsContainer">
-            <div class="researchstatement">
-                <h1>MoMA PS4</h1>
+            <div class="statement">
                 <p>Short video utilizing time-based typography techniques to communicate an idea to a specific audience. </br>
             The video proposes an inviting space for contemporary art and music in only a minute displaying photos and video of curated artists' work.  
-                </br></br>Original track by HITMAKERCHINX</p>
+                </br>
+        </br>
+        Original track by HITMAKERCHINX</p>
             </div>
-            
-            <div class="player3"><iframe src="https://player.vimeo.com/video/219029632" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+</br>
+</br>
+<div class="vimeoPlayer"><iframe src="https://player.vimeo.com/video/219029632?color=ff0000" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </div>
-</br>
-</br>
-</br>
-</br>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-	           $('#dropdown-content').slicknav();
-            });
-    </script>
-    </body>
+</div>
+    <script> // sidebar dropdown button
+    var acc = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+</body>
 </html>

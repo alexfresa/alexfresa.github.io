@@ -1,106 +1,195 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
-        <link rel="stylesheet" href="/otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
-        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
-        <script src="/NEWMENU.js"></script>
-        <script src="/norightclick.js"></script>
+        <link rel="stylesheet" href=/css/otherstyles.css>
+        <link rel="stylesheet" href="/simple-portfolio-page/css/normalize.css">
+        <link rel="hover styles" href="/css/hover-master/css/hover.css" media="all">  
+        <script src="/js/norightclick.js"></script>
+        <script src="/js/filterdropdown.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var filterList = {
+                    init: function () {
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixItUp({
+                            selectors: {
+                                target: '.portfolio',
+                                filter: '.filter'	
+                            },
+                            load: {
+                                filter: ".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound"  
+                            }     
+                        });								
+                    }
+                };
+                // Run the show!
+                filterList.init();
+            });	
+        </script>
     </head>
-
-    <body>   
-        <div id="sidebar">
-            <div id="pagetitle"><a href="/index.html">Alex Fresa</a></div>
-            <div id="logo">
-                <button onclick="toggleNavPanel('sections_panel')"></button>
-            </div>
-            <div id="sections_panel">
-                <div>
-                    <ul id="dropdown-content">
-                        <li><a href="/all.html">PORTFOLIO</a></li>
-                        <li><a href="/research.html">RESEARCH</a></li>
+    
+    <header>
+        <div class="sidebar">
+            <div id="ResponsiveTitle"><a class ="logo" href="/all.html"><img src="/images/name1.svg"></a></img></div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="dropdown-content">
+            <li>
+                <button class="dropdown-btn">COLLECTIONS</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="/all/video.html">VIDEO & PERFORMANCE</a></li>
+                        <li><a href="/all/art.html">ART & INSTALLATION</a></li>
+                        <li><a href="/all/design.html">WEB & DESIGN</a></li>
+                        <li><a href="/all/sound.html">SOUND</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button class="dropdown-btn">INFO</button>
+                <div class="panel">
+                    <ul>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
+            </li>
+            <li><a href="/research.html">RESEARCH</a></li>
+        </ul>
         </div>
-    
-        <div class="galleryContainer">
-            <div class="gallery1">
-                <a href="/all/design/ONUS.html">
-                <img src="/all/design/ONUS/onussmall.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>ONUS</i></div>
-                        <div class="galleryDate">2018</div>
-                    </div>
-                </a>
-            </div> 
+    </header>
+
+<body> 
+    <div id="canvas"> <!-- full body padding -->
         
-            <div class="gallery2">
-                <a href="/all/design/LACC.html">
-                <img src="/all/design/LACC2018/LACCSmall.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>LACC</i></div>
-                        <div class="galleryDate">2018</div>
+        <!-- DESKTOP FILTER MENU -->
+        <div class="projectmenuTitle">
+                <li>WEB & DESIGN</li>
+        </div>
+        
+         <div class="galleryContainer">
+            <div id="portfoliolist">
+                
+                <div class="portfolio mixedmedia design" data-cat="mixedmedia design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/ONUS.html">
+                            <img src="/all/design/ONUS/onussmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/ONUS.html">ONUS</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
+                </div>
+                
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/LACC.html">
+                            <img src="/all/design/LACC2018/LACCSmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/LACC.html">LACC</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>			
+			
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/freelance.html">
+                            <img src="/all/design/freelance/BYSBBfacebooksmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/freelance.html">Freelance Collection</a>
+                                    <span class="text-category">2018~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>				
+			
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/misconnections.html">
+                            <img src="/all/Misconnections2017/misconnections.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/misconnections.html">Misconnections</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>			
+
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/noknow.html">
+                            <img src="/all/design/noKnow2017/noKnow.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/noknow.html">noKnow</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																												
+
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/flyers.html">
+                            <img src="/all/design/flyers/tuessmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/flyers.html">Flyer Collection</a>
+                                    <span class="text-category">2015~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																	
             
-            <div class="gallery3">
-                <a href="/all/design/misconnections.html">
-                <img src="/all/Misconnections2017/misconnections.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>Misconnections</i></div>
-                        <div class="galleryDate">2017</div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="gallery4">
-                <a href="/all/design/noknow.html">
-                <img src="/all/design/noKnow2017/noKnow.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>noKnow</i></div>
-                        <div class="galleryDate">2017</div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="gallery5">
-                <a href="/all/design/flyers.html">
-                <img src="/all/design/flyers/tuessmall.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>Flyer Collection</i></div>
-                        <div class="galleryDate">2015 ~</div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="gallery6">
-                <a href="/all/design/freelance.html">
-                <img src="/all/design/freelance/BYSBBfacebooksmall.png" class="galleryimage">
-                    <div class="overlay">
-                        <div class="galleryTitle"><i>Freelance Collection</i></div>
-                        <div class="galleryDate">2018 ~</div>
-                    </div>
-                </a>
             </div>
         </div>
-        </br>
-</br>
-</br>
-</br>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-	           $('#dropdown-content').slicknav();
+    </div>
+    
+    <script> // sidebar dropdown button
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
             });
+        }
     </script>
-    </body>
+    
+</body>
 </html>

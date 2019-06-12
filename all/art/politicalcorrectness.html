@@ -1,58 +1,170 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
-        <link rel="stylesheet" href="/otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
-        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
-        <script src="/NEWMENU.js"></script>
-        <script src="/norightclick.js"></script>
+        <link rel="stylesheet" href=/css/otherstyles.css>
+        <link rel="stylesheet" href="/simple-portfolio-page/css/normalize.css">
+        <link rel="hover styles" href="/css/hover-master/css/hover.css" media="all"> 
+        <link rel="stylesheet" type="text/css" href="/css/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/slick-1.8.1/slick/slick-theme.css"/>
+        <script src="/js/norightclick.js"></script>
+        <script src="/js/filterdropdown.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var filterList = {
+                    init: function () {
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixItUp({
+                            selectors: {
+                                target: '.portfolio',
+                                filter: '.filter'	
+                            },
+                            load: {
+                                filter: ".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound"  
+                            }     
+                        });								
+                    }
+                };
+                // Run the show!
+                filterList.init();
+            });	
+        </script>
     </head>
     
-    <body>
-        <div id="sidebar">
-            <div id="pagetitle"><a href="/index.html">Alex Fresa</a></div>
-            <div id="logo">
-                <button onclick="toggleNavPanel('sections_panel')"></button>
-            </div>
-            <div id="sections_panel">
-                <div>
-                    <ul id="dropdown-content">
-                        <li><a href="/all.html">PORTFOLIO</a></li>
-                        <li><a href="/research.html">RESEARCH</a></li>
+    <header>
+        <div class="sidebar">
+            <div id="ResponsiveTitle"><a class ="logo" href="/all.html"><img src="/images/name1.svg"></a></img></div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="dropdown-content">
+            <li>
+                <button class="dropdown-btn">COLLECTIONS</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="/all/video.html">VIDEO & PERFORMANCE</a></li>
+                        <li><a href="/all/art.html">ART & INSTALLATION</a></li>
+                        <li><a href="/all/design.html">WEB & DESIGN</a></li>
+                        <li><a href="/all/sound.html">SOUND</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button class="dropdown-btn">INFO</button>
+                <div class="panel">
+                    <ul>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
+            </li>
+            <li><a href="/research.html">RESEARCH</a></li>
+        </ul>
+        </div>
+    </header>
+    
+    <body>
+    <div id="canvas"> <!-- full body padding -->
+        <!-- DESKTOP FILTER MENU -->
+        <div class="projectmenuTitle">
+                <li>POLITICAL CORRECTNESS</li>
         </div>
         
         <div class ="specsContainer">
-            <div class="researchstatement">
-                <h1><i>Political Correctness</i></h1>
-                <p>A sculptural installation composed entirely of found objects. The objects selected all hold some degree of political significance. The objective in compiling the objects within a single piece was to construct an imagined optimal awareness; a piece that works to reflect the conscience of the observer.
-            </br></p>
+            <div class="statement">
+                <p>A sculptural installation composed entirely of found objects. The objects selected all hold some degree of political significance. The objective in compiling the objects within a single piece was to construct an imagined optimal awareness; a piece that works to reflect the conscience of the observer.</p>
             </div>
+            </br>
+        </br>
             
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new2.png">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new1.JPG">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new3.JPG">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new4.JPG">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new5.JPG">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new6.JPG">
-            <img class="artwork2" src="/all/art/PoliticalCorrectness2018/new7.JPG">
+        <a href="#_" class="lightbox" id="img1">
+            <img src="/all/art/PoliticalCorrectness2018/new1.JPG">
+        </a>
+        <a href="#_" class="lightbox" id="img2">
+            <img src="/all/art/PoliticalCorrectness2018/new2.png">
+        </a>
+        <a href="#_" class="lightbox" id="img3">
+            <img src="/all/art/PoliticalCorrectness2018/new3.JPG">
+        </a>
+        <a href="#_" class="lightbox" id="img4">
+            <img src="/all/art/PoliticalCorrectness2018/new4.JPG">
+        </a>
+        <a href="#_" class="lightbox" id="img5">
+            <img src="/all/art/PoliticalCorrectness2018/new5.JPG">
+        </a>
+        <a href="#_" class="lightbox" id="img6">
+            <img src="/all/art/PoliticalCorrectness2018/new6.JPG">
+        </a>
+        <a href="#_" class="lightbox" id="img7">
+            <img src="/all/art/PoliticalCorrectness2018/new7.JPG">
+        </a>
+        
+        <div class="slider" id="slickSlider">
+            <a href="#img1">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new1.JPG"></div>
+            </a>
+            <a href="#img2">
+        <div class="variable" style="margin:25% 0 0 0;"><img src="/all/art/PoliticalCorrectness2018/new2.png"></div>
+            </a>
+            <a href="#img3">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new3.JPG"></div>
+            </a>
+            <a href="#img4">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new4.JPG"></div>
+            </a>
+            <a href="#img5">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new5.JPG"></div>
+            </a>
+            <a href="#img6">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new6.JPG"></div>
+            </a>
+            <a href="#img7">
+        <div class="variable"><img src="/all/art/PoliticalCorrectness2018/new7.JPG"></div>
+            </a>
         </div>
-</br>
-</br>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-	           $('#dropdown-content').slicknav();
-            });
-    </script>
-    </body>
+        </div>
+        </div>
+        
+        
+    <script> // sidebar dropdown button
+    var acc = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/css/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 300,
+          adaptiveHeight: true,
+          slidesToShow: 3,
+          slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
 </html>

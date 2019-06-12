@@ -4,78 +4,457 @@
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
-        <link rel="stylesheet" href="otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
-        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
-        <script src="/NEWMENU.js"></script>
-        <script src="/norightclick.js"></script>
+        <link rel="stylesheet" href="/css/otherstyles.css">
+        <link rel="stylesheet" href="simple-portfolio-page/css/normalize.css">
+        <link rel="hover styles" href="/css/hover-master/css/hover.css" media="all">  
+        <script src="/js/norightclick.js"></script>
+        <script src="/js/filterdropdown.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var filterList = {
+                    init: function () {
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixItUp({
+                            selectors: {
+                                target: '.portfolio',
+                                filter: '.filter'	
+                            },
+                            load: {
+                                filter: ".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound"  
+                            }     
+                        });								
+                    }
+                };
+                // Run the show!
+                filterList.init();
+            });	
+        </script>
     </head>
     
-    <body>  
-        <div id="sidebar">
-            <div id="pagetitle"><a href="/index.html">Alex Fresa</a></div>
-            <div id="logo">
-                <button onclick="toggleNavPanel('sections_panel')"></button>
-            </div>
-            <div id="sections_panel">
-                <div>
-                    <ul id="dropdown-content">
-                        <li><a href="/all.html">PORTFOLIO</a></li>
-                        <li><a href="/research.html">RESEARCH</a></li>
+    <header>
+        <div class="sidebar">
+            <div id="ResponsiveTitle"><a class ="logo" href="/all.html"><img src="images/name1.svg"></a></img></div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="dropdown-content">
+            <li>
+                <button class="dropdown-btn">COLLECTIONS</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="/all/video.html">VIDEO & PERFORMANCE</a></li>
+                        <li><a href="/all/art.html">ART & INSTALLATION</a></li>
+                        <li><a href="/all/design.html">WEB & DESIGN</a></li>
+                        <li><a href="/all/sound.html">SOUND</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button class="dropdown-btn">INFO</button>
+                <div class="panel">
+                    <ul>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
+            </li>
+            <li><a href="/research.html">RESEARCH</a></li>
+        </ul>
+        </div>
+    </header>
+
+<body> 
+    <div id="canvas"> <!-- full body padding -->
+        
+        <!-- DESKTOP FILTER MENU -->
+        <div class="projectmenu">
+            <ul id="filters" class="clearfix">
+                <li><span class="filter active" data-filter=".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound">ALL</span></li>
+                <li><span class="filter" data-filter=".video">VIDEO</span></li>
+                <li><span class="filter" data-filter=".performance">PERFORMANCE</span></li>
+                <li><span class="filter" data-filter=".web">WEB</span></li>
+                <li><span class="filter" data-filter=".design">DESIGN</span></li>
+                <li><span class="filter" data-filter=".mixedmedia">MIXED MEDIA</span></li>
+                <li><span class="filter" data-filter=".sculpture">SCULPTURE</span></li>
+                <li><span class="filter" data-filter=".installation">INSTALLATION</span></li>
+                <li><span class="filter" data-filter=".sound">SOUND</span></li>
+            </ul>
+        </div>
+            
+        <!-- RESPONSIVE FILTER MENU -->
+        <div class="FilterDropdown">
+            <button onclick="myFunction()" class="filterdropbtn">FILTER SELECT</button>
+            <div id="myFilterDropdown" class="filter-dropdown-content">
+                <span class="filter active" data-filter=".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound">ALL</span>
+                <span class="filter" data-filter=".video">VIDEO</span>
+                <span class="filter" data-filter=".performance">PERFORMANCE</span>
+                <span class="filter" data-filter=".web">WEB</span>
+                <span class="filter" data-filter=".design">DESIGN</span>
+                <span class="filter" data-filter=".mixedmedia">MIXED MEDIA</span>
+                <span class="filter" data-filter=".sculpture">SCULPTURE</span>
+                <span class="filter" data-filter=".installation">INSTALLATION</span>
+                <span class="filter" data-filter=".sound">SOUND</span>
             </div>
         </div>
-            
+        
         <div class="galleryContainer">
-    
-        <div class="bigGallery1">
-        <a href="all/video.html">
-            <img src="/images/cassiescorruption434.png" class="galleryimage">
-                <div class="overlay">
-                    <div class=galleryType><i>Video & Performance</i></div>
+            <div id="portfoliolist">
+                
+                <div class="portfolio mixedmedia design" data-cat="mixedmedia design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/ONUS.html">
+                            <img src="/all/design/ONUS/onussmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/ONUS.html">ONUS</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="bigGallery2">
-        <a href="all/design.html">
-            <img src="/images/lizzicover434.png" class="galleryimage">
-                <div class="overlay">
-                    <div class=galleryType><i>Web & Design</i></div>
+                
+                <div class="portfolio video performance" data-cat="video performance">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/video/untitled.html">
+                            <img src="/all/video/untitled2018/untitledSmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/video/untitled.html">(untitled)</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="bigGallery3">
-        <a href="all/art.html">
-            <img src="/images/pcsmall434.png" class="galleryimage">
-                <div class="overlay">
-                    <div class=galleryType><i>Art & Installation</i></div>
+                
+                <div class="portfolio sculpture" data-cat="sculpture">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/shamepole.html">
+                            <img src="/all/art/ShamePole2018/ShamePoleSmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/shamepole.html">Shame Pole</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+			
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/LACC.html">
+                            <img src="/all/design/LACC2018/LACCSmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/LACC.html">LACC</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>			
+			
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/freelance.html">
+                            <img src="/all/design/freelance/BYSBBfacebooksmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/freelance.html">Freelance Collection</a>
+                                    <span class="text-category">2018~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
-        </div>  
+                
+                <div class="portfolio video performance" data-cat="video performance">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/video/aintgonnarain.html">
+                            <img src="/all/video/AintGonnaRain2018/aintgonnarainsmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/video/aintgonnarain.html">Ain't Gonna Rain</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+			
+                <div class="portfolio sculpture" data-cat="sculpture">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/playthings.html">
+                            <img src="/all/art/Playthings2018/PlaythingsSmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/playthings.html">Playthings</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+			
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/politicalcorrectness.html">
+                            <img src="/all/art/PoliticalCorrectness2018/pcsmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/politicalcorrectness.html">Political Correctness</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+			
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/enchantedspace.html">
+                            <img src="/all/art/EnchantedSpace2017/enchantedsmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/enchantedspace.html">Enchanted Space</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																																						
+			
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/thinskin.html">
+                            <img src="/all/art/ThinSkin2017/thinskinsmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/thinskin.html">Thin Skin</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>													
+			
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/misconnections.html">
+                            <img src="/all/Misconnections2017/misconnections.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/misconnections.html">Misconnections</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>			
+
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/noknow.html">
+                            <img src="/all/design/noKnow2017/noKnow.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/noknow.html">noKnow</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																
+
+                <div class="portfolio sculpture installation" data-cat="sculpture installation">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/hehangsheavy.html">
+                            <img src="/all/art/HeHangsHeavy2017/hehangssmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/hehangsheavy.html">He Hangs Heavy</a>
+                                    <span class="text-category">2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>												
+			
+                <div class="portfolio video" data-cat="video">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/video/cassiescorruption.html">
+                            <img src="/all/video/CassiesCorruption2016/cassiescorruption.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/video/cassiescorruption.html">La Diavolessa: Cassie's Corruption</a>
+                                    <span class="text-category">2016</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>						
+
+                <div class="portfolio sound" data-cat="sound">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/sound/sandpact.html">
+                            <img src="/all/sound/SandPact/TITLEsound2.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/sound/sandpact.html">Sand Pact</a>
+                                    <span class="text-category">2016~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																							
+
+                <div class="portfolio video" data-cat="video">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/video/thesoundingsea.html">
+                            <img src="/all/video/TheSoundingSea2016/soundingsea.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/video/thesoundingsea.html">The Sounding Sea</a>
+                                    <span class="text-category">2016</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>			
+			
+                <div class="portfolio video" data-cat="video">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/video/momaps4.html">
+                            <img src="/all/video/MoMAPS42016/momaps4.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/video/momaps4.html">MoMA PS4</a>
+                                    <span class="text-category">2016</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																
+
+                <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/design/flyers.html">
+                            <img src="/all/design/flyers/tuessmall.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/flyers.html">Flyer Collection</a>
+                                    <span class="text-category">2015~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																																																															
+                <div class="portfolio mixedmedia" data-cat="mixedmedia">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/digitalart.html">
+                            <img src="/all/art/RemixxxCulture2015/REMIXCULTUREicon.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/digitalart.html">Digital Art Collection</a>
+                                    <span class="text-category">2015~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>		
+			
+                <div class="portfolio mixedmedia" data-cat="mixedmedia">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/meatpacking.html">
+                            <img src="/all/art/Meatpacking2015/untitledSMALL.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/meatpacking.html">Meatpacking</a>
+                                    <span class="text-category">2015</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>						
+			
+                <div class="portfolio mixedmedia" data-cat="mixedmedia">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/art/windows.html">
+                            <img src="/all/art/Windows2014/windowsSMALL.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/art/windows.html">Windows</a>
+                                    <span class="text-category">2014</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																
+
+                <div class="portfolio sound" data-cat="sound">
+                    <div class="portfolio-wrapper">
+                        <a href="/all/sound/debtstalker.html">
+                            <img src="/all/sound/DebtStalker/habitual.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/sound/debtstalker.html">Debt Stalker</a>
+                                    <span class="text-category">2014~</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>																											
             
-        <div class="bigGallery4">
-        <a href="all/sound.html">
-            <img src="/images/TITLEsound2434.png" class="galleryimage">
-                <div class="overlay">
-                    <div class=galleryType><i>Sound</i></div>
-                </div>
-            </a>
-        </div> 
+            </div>
         </div>
-        </br>
-</br> 
-</br>
-</br>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-	           $('#dropdown-content').slicknav();
+    </div>
+    
+    <script> // sidebar dropdown button
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
             });
-        </script>
-    </body>
+        }
+    </script>
+    
+</body>
 </html>

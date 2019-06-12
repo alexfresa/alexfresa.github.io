@@ -1,58 +1,151 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>Alex Fresa</title>
-        <link rel="stylesheet" href="/otherstyles.css">
-        <link rel="hover styles" href="Hover-master/css/hover.css" media="all">  
-        <link rel="stylesheet" href="/SlickNav-master/dist/slicknav.css">
-        <script src="/NEWMENU.js"></script>
-        <script src="/norightclick.js"></script>
+        <link rel="stylesheet" href=/css/otherstyles.css>
+        <link rel="stylesheet" href="/simple-portfolio-page/css/normalize.css">
+        <link rel="hover styles" href="/css/hover-master/css/hover.css" media="all"> 
+        <link rel="stylesheet" type="text/css" href="/css/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/slick-1.8.1/slick/slick-theme.css"/>
+        <script src="/js/norightclick.js"></script>
+        <script src="/js/filterdropdown.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/simple-portfolio-page/js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var filterList = {
+                    init: function () {
+                        // MixItUp plugin
+                        // http://mixitup.io
+                        $('#portfoliolist').mixItUp({
+                            selectors: {
+                                target: '.portfolio',
+                                filter: '.filter'	
+                            },
+                            load: {
+                                filter: ".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound"  
+                            }     
+                        });								
+                    }
+                };
+                // Run the show!
+                filterList.init();
+            });	
+        </script>
     </head>
     
-    <body>
-        <div id="sidebar">
-            <div id="pagetitle"><a href="/index.html">Alex Fresa</a></div>
-            <div id="logo">
-                <button onclick="toggleNavPanel('sections_panel')"></button>
-            </div>
-            <div id="sections_panel">
-                <div>
-                    <ul id="dropdown-content">
-                        <li><a href="/all.html">PORTFOLIO</a></li>
-                        <li><a href="/research.html">RESEARCH</a></li>
+    <header>
+        <div class="sidebar">
+            <div id="ResponsiveTitle"><a class ="logo" href="/all.html"><img src="/images/name1.svg"></a></img></div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="dropdown-content">
+            <li>
+                <button class="dropdown-btn">COLLECTIONS</button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="/all/video.html">VIDEO & PERFORMANCE</a></li>
+                        <li><a href="/all/art.html">ART & INSTALLATION</a></li>
+                        <li><a href="/all/design.html">WEB & DESIGN</a></li>
+                        <li><a href="/all/sound.html">SOUND</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button class="dropdown-btn">INFO</button>
+                <div class="panel">
+                    <ul>
                         <li><a href="/about.html">ABOUT</a></li>
                         <li><a href="/contact.html">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
+            </li>
+            <li><a href="/research.html">RESEARCH</a></li>
+        </ul>
+        </div>
+    </header>
+    
+  <body>
+    <div id="canvas"> <!-- full body padding -->
+        <!-- DESKTOP FILTER MENU -->
+        <div class="projectmenuTitle">
+                <li>SHAME POLE</li>
         </div>
         
         <div class ="specsContainer">
-            <div class="researchstatement">
-                <h1>Shame Pole</h1>
+            <div class="statement">
                 <p>Sculpture created as an interpretation of a Northwest Coast shame pole that attempts to take its practice into a deeper emotional territory. The piece attempts to redefine "shame" and illustrate exile through color and material. </br></br>The structure of the piece includes a cement base underneath a plastic utility case that was later boxed in with wood. After the head piece was secured, it was later ornamented with found objects that were dyed black for a uniform appearance.</p>
             </div>
-            
-<div class = "artworkWrap">
-            <img class="artwork3"  src="/all/art/ShamePole2018/IMG_20180508_145727.jpg">
-            <img class="artwork4"  src="/all/art/ShamePole2018/IMG_20180508_145743.jpg">
-</div>
-<div class = "artworkWrap">
-            <img class="artwork3"  src="/all/art/ShamePole2018/IMG_20180508_145749.jpg">
-            <img class="artwork4"  src="/all/art/ShamePole2018/IMG_20180508_145732.jpg">
-</div>
-        </div>
 </br>
 </br>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="/SlickNav-master/dist/jquery.slicknav.js"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-	           $('#dropdown-content').slicknav();
-            });
-    </script>
-    </body>
+
+<a href="#_" class="lightbox" id="img1">
+    <img src="/all/art/ShamePole2018/IMG_20180508_145727.jpg">
+</a>
+<a href="#_" class="lightbox" id="img2">
+    <img src="/all/art/ShamePole2018/IMG_20180508_145743.jpg">
+</a>
+<a href="#_" class="lightbox" id="img3">
+    <img src="/all/art/ShamePole2018/IMG_20180508_145749.jpg">
+</a>
+<a href="#_" class="lightbox" id="img4">
+    <img src="/all/art/ShamePole2018/IMG_20180508_145732.jpg">
+</a>
+
+<div class="slider" id="slickSlider">
+    <a href="#img1">
+        <div><img src="/all/art/ShamePole2018/IMG_20180508_145727.jpg"></div>
+        </a>
+    <a href="#img2">
+        <div><img src="/all/art/ShamePole2018/IMG_20180508_145743.jpg"></div>
+        </a>
+    <a href="#img3">
+        <div><img src="/all/art/ShamePole2018/IMG_20180508_145749.jpg"></div>
+        </a>
+    <a href="#img4">
+        <div><img src="/all/art/ShamePole2018/IMG_20180508_145732.jpg"></div>
+        </a>
+</div>
+</div>
+</div>
+
+    <script> // sidebar dropdown button
+    var acc = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/css/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+           dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 300,
+          adaptiveHeight: true,
+          slidesToShow: 3,
+          slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
 </html>
