@@ -70,18 +70,35 @@
         </ul>
         </div>
     </header>
-    
-    <body>
+
+<body> 
+<body> 
     <div id="canvas"> <!-- full body padding -->
         <!-- DESKTOP FILTER MENU -->
         <div class="projectmenuTitle">
                 <li>FLYER COLLECTION</li>
         </div>
         
-        <div class ="specsContainer">
+        
             
-        <a href="#_" class="lightbox" id="img1">
-           <img src="/all/design/flyers/experimental%20tuesday%20draft.png">  
+        <!-- RESPONSIVE FILTER MENU -->
+        <div class="FilterDropdown">
+            <button onclick="myFunction()" class="filterdropbtn">FILTER SELECT</button>
+            <div id="myFilterDropdown" class="filter-dropdown-content">
+                <span class="filter active" data-filter=".video, .performance, .web, .design, .mixedmedia, .sculpture, .installation, .sound">ALL</span>
+                <span class="filter" data-filter=".video">VIDEO</span>
+                <span class="filter" data-filter=".performance">PERFORMANCE</span>
+                <span class="filter" data-filter=".web">WEB</span>
+                <span class="filter" data-filter=".design">DESIGN</span>
+                <span class="filter" data-filter=".mixedmedia">MIXED MEDIA</span>
+                <span class="filter" data-filter=".sculpture">SCULPTURE</span>
+                <span class="filter" data-filter=".installation">INSTALLATION</span>
+                <span class="filter" data-filter=".sound">SOUND</span>
+            </div>
+        </div>
+        
+        <a href="#_" class="lightbox" id="img1" title="sample text or the footer.">
+           <img src="/all/design/flyers/experimental%20tuesday%20draft.png">
         </a>
         <a href="#_" class="lightbox" id="img2">
             <img src="/all/design/flyers/COLLISIONEVENT.jpg">
@@ -94,8 +111,6 @@
         </a>
         <a href="#_" class="lightbox" id="img5">
             <img src="/all/design/flyers/lizzi%20cover.png">
-        </a>
-        <a href="#_" class="lightbox" id="img6">
             <img src="/all/design/flyers/lizziback.png">
         </a>
         <a href="#_" class="lightbox" id="img7">
@@ -118,84 +133,232 @@
         </a>
             <a href="#_" class="lightbox" id="img13">
             <img src="/all/design/flyers/rubyflyer6.png">
-        </a>
-            <a href="#_" class="lightbox" id="img14">
-            <img src="/all/design/flyers/RUBYFLYER6SQUARE.png">
+                <img src="/all/design/flyers/RUBYFLYER6SQUARE.png">
         </a>
             <a href="#_" class="lightbox" id="img15">
             <img src="/all/design/flyers/grindhouse7.png">
         </a>
         
-        <div class="slider" id="slickSlider">
-            <a href="#img1">
-        <div class="variable" style="margin:20% 0 0 0;"><img src="/all/design/flyers/experimental%20tuesday%20draft.png"></div>
-            </a>
-            <a href="#img2">
-        <div class="variable" style="margin:14% 0 0 0;"><img src="/all/design/flyers/COLLISIONEVENT.jpg"></div>
-            </a>
-            <a href="#img3">
-        <div class="variable" style="margin:11% 0 0 0;"><img src="/all/design/flyers/fresaSamplePoster.png"></div>
-            </a>
-            <a href="#img4">
-        <div class="variable" style="margin:50% 0 0 0;"><img src="/all/design/flyers/pena%20perp%C3%A9tua%20large.png"></div>
-            </a>
-            <a href="#img5">
-        <div class="variable" style="margin:25% 0 0 0;"><img src="/all/design/flyers/lizzi%20cover.png"></div>
-            </a>
-            <a href="#img6">
-        <div class="variable" style="margin:25% 0 0 0;"><img src="/all/design/flyers/lizziback.png"></div>
-            </a>
-            <a href="#img7">
-        <div class="variable" style="margin:50% 0 0 0;"><img src="/all/design/flyers//RUBY%20FLYER.png"></div>
-            </a>
-            <a href="#img8">
-        <div class="variable" style="margin:50% 0 0 0;"><img src="/all/design/flyers/RUBY%20FLYER%202.png"></div>
-            </a>
-            <a href="#img9">
-        <div class="variable" style="margin:30% 0 0 0;"><img src="/all/design/flyers/debtstalkerWXYC.png"></div>
-            </a>
-            <a href="#img10">
-        <div class="variable" style="margin:50% 0 0 0;"><img src="/all/design/flyers/rubyflyer3.png"></div>
-            </a>
-            <a href="#img11">
-        <div class="variable" style="margin:50% 0 0 0;"><img src="/all/design/flyers/rubyflyer4.png"></div>
-            </a>
-            <a href="#img12">
-        <div class="variable" style="margin:0 0 0 0;"><img src="/all/design/flyers/rubyflyer5.png"></div>
-            </a>
-            <a href="#img13">
-        <div class="variable" style="margin:0 0 0 0;"><img src="/all/design/flyers/rubyflyer6.png"></div>
-            </a>
-            <a href="#img14">
-        <div class="variable" style="margin:30% 0 0 0;"><img src="/all/design/flyers/RUBYFLYER6SQUARE.png"></div>
-            </a>
-            <a href="#img15">
-        <div class="variable" style="margin:0 0 0 0;"><img src="/all/design/flyers/grindhouse7.png"></div>
-            </a>
+        <div class="galleryContainer">
+            
+            <div id="portfoliolist">
+                
+                <div class="portfolio sound" data-cat="sound">
+                    <div class="portfolio-wrapper">
+                        <a href="#img15">
+                            <img src="/all/design/flyers/grindhouse7.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img15">Grindhouse 7</a>
+                                    <span class="text-category">May 31st, 2019</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                <div class="portfolio sculpture installation" data-cat="sculpture installation">
+                    <div class="portfolio-wrapper">
+                        <a href="#img13">
+                            <img src="/all/design/flyers/rubyflyer6.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img13">Grindhouse 6</a>
+                                    <span class="text-category">April 26th, 2019</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="#img12">
+                            <img src="/all/design/flyers/rubyflyer5.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img12">Grindhouse 5</a>
+                                    <span class="text-category">March 8th, 2019</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>		
+                
+                <div class="portfolio mixedmedia design" data-cat="mixedmedia design">
+                    <div class="portfolio-wrapper">
+                        <a href="#img1">
+                            <img src="/all/design/flyers/experimental%20tuesday%20draft.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img1">Experimental Tuesday</a>
+                                    <span class="text-category">July 25th, 2017</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio video performance" data-cat="video performance">
+                    <div class="portfolio-wrapper">
+                        <a href="#img2">
+                            <img src="/all/design/flyers/COLLISIONEVENT.jpg" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img2">Collision Event</a>
+                                    <span class="text-category">January 9th, 2016</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio sculpture" data-cat="sculpture">
+                    <div class="portfolio-wrapper">
+                        <a href="#img3">
+                            <img src="/all/design/flyers/fresaSamplePoster.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img3">Commuter Appreciation Week</a>
+                                    <span class="text-category">UNCA</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                 <div class="portfolio design" data-cat="design">
+                    <div class="portfolio-wrapper">
+                        <a href="#img5">
+                            <img src="/all/design/flyers/lizzi%20cover.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img5">Artist Spotlight</a>
+                                    <span class="text-category">Lizzi Bougatsos</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="#img11">
+                            <img src="/all/design/flyers/rubyflyer4.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img11">Grindhouse 4</a>
+                                    <span class="text-category">February 8th, 2019</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="#img10">
+                            <img src="/all/design/flyers/rubyflyer3.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img10">Grindhouse 3</a>
+                                    <span class="text-category">December 14th, 2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="#img8">
+                            <img src="/all/design/flyers/RUBY%20FLYER%202.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img8">Grindhouse 2</a>
+                                    <span class="text-category">October 20th, 2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+                
+                <div class="portfolio sculpture" data-cat="sculpture">
+                    <div class="portfolio-wrapper">
+                        <a href="#img7">
+                            <img src="/all/design/flyers/RUBY%20FLYER.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img7">Grindhouse Debut</a>
+                                    <span class="text-category">August 24th, 2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+			
+                <div class="portfolio installation" data-cat="installation">
+                    <div class="portfolio-wrapper">
+                        <a href="#img9">
+                            <img src="/all/design/flyers/debtstalkerWXYC.png" class="galleryimage">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="#img9">New Science Experience</a>
+                                    <span class="text-category">February 1st, 2019</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>		
+                
+                <!-- <div class="portfolio web design" data-cat="web design">
+                    <div class="portfolio-wrapper">
+                        <a href="#img4">
+                            <img src="/all/design/flyers/pena%20perp%C3%A9tua%20large.png">
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" href="/all/design/LACC.html">LACC</a>
+                                    <span class="text-category">2018</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->	
+			
+            </div>
         </div>
-        </div>
-</div>
-
-    <script> // sidebar dropdown button
-    var acc = document.getElementsByClassName("dropdown-btn");
-    var i;
+    </div>
     
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        });
-    }
-</script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="/css/slick-1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
+    <script> // sidebar dropdown button
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+    <script type="text/javascript">
     $(document).ready(function(){
       $('.slider').slick({
           dots: true,
@@ -208,5 +371,6 @@
       });
     });
   </script>
+    
 </body>
 </html>

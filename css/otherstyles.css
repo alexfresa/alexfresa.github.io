@@ -111,7 +111,7 @@ div#ResponsiveTitle {
 	display: none;
 }
 .sidebar {
-	z-index:1000;
+	z-index:1;
 	margin:0;
 	padding:10px;
 	float:left;
@@ -123,7 +123,7 @@ div#ResponsiveTitle {
 }
 .sidebar > #ResponsiveTitle{
 	display: inline-block;
-	z-index:10000;
+	z-index:2;
 	margin-left: 0em;
 	margin-top: 0em;
 	background-color: transparent;
@@ -326,12 +326,21 @@ div#ResponsiveTitle {
 	font-family: tradegothic, arial, futura;
 	text-align: left;
 }
+
+.lightbox .imageDescription {
+	position:relative;
+	max-width: 90%;
+	max-height: 80%;
+	margin: 5%;
+    color:white;
+}
+
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
 	/** Position and style */
 	position: fixed;
-	z-index: 999999;
+	z-index: 9999999999;
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -339,6 +348,7 @@ div#ResponsiveTitle {
 	left: 0;
 	background: rgba(0,0,0,0.8);
 }
+
 .lightbox img {
 	/** Pad the lightbox image */
 	max-width: 90%;
@@ -353,7 +363,7 @@ div#ResponsiveTitle {
 }
 /* body details container*/
 .specsContainer {
-	margin: 0px 40px 0px 18em;
+	margin: 0px 20px 0px 18em;
 }
 /* gallery image container */
 .galleryContainer {
@@ -372,7 +382,7 @@ div#ResponsiveTitle {
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	width:30.3%;
-	margin:0 3% 3% 0%;
+	margin:0% 3% 3% 0%;
 	display:none;
 	float:left;
 	overflow:hidden;
